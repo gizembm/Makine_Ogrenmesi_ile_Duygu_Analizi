@@ -134,3 +134,13 @@ Spam içerik algılandığında sistemin verdiği uyarı.
 
 ---
 
+## 👨‍💻 Katılımcılar
+
+- Dilara Öztürk
+- Yasemin Kılıç
+- Gizem Efe
+- Hilal Şarkışla
+- Elif Sude Ünal
+
+
+---
