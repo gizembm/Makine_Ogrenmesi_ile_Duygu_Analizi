@@ -68,14 +68,6 @@ Veritabanı aşağıdaki ana tabloları içerir:
 - Duygu Analizi Sonuçları
 - Spam Yorum Uyarı Sistemi
 
-## 👨‍💻 Katılımcılar
-
-- Dilara Öztürk
-- Yasemin Kılıç
-- Gizem Efe
-- Hilal Şarkışla
-- Elif Sude Ünal
-
 ## 📷 Ekran Görüntüleri
 
 ### 🏠 Ana Sayfa
@@ -131,8 +123,6 @@ Spam içerik algılandığında sistemin verdiği uyarı.
 ![image](https://github.com/user-attachments/assets/a1e574a7-d489-48db-9a22-40f1ce556628)
 
 
-
----
 
 ## 👨‍💻 Katılımcılar
 
