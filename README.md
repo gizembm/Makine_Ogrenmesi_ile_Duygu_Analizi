@@ -88,7 +88,7 @@ Kullanıcının sisteme giriş yapmadan önce karşılaştığı sayfa.
 ### 🔐 Ben Kimim Ekranı
 Resimleri çeken kişi hakkında kısa bir bilgi.
 
-![image](https://github.com/user-attachments/assets/0f00e50d-a1c8-4b6e-ad66-19b3241101bf)
+![image](https://github.com/user-attachments/assets/843f3ee0-256e-4b37-aaeb-097d13ac213c)
 
 
 ---
@@ -96,21 +96,21 @@ Resimleri çeken kişi hakkında kısa bir bilgi.
 ### 🔐 Giriş Yap Ekranı
 Kullanıcının e-posta ve şifre bilgileriyle giriş yaptığı ekran.
 
-![image](https://github.com/user-attachments/assets/026d036b-76be-425f-9567-a7abd14ccee7)
+![image](https://github.com/user-attachments/assets/566e90b5-b126-470b-bebe-15227150f9f0)
 
 
 ---
 ### 🔐 Kayıt Ol Ekranı
 Kullanıcının e-posta ve şifre bilgileriyle Kayıt olduğu ekran.
 
-![image](https://github.com/user-attachments/assets/0aa565a0-6b5b-48f9-bd17-fa1d49f7aff8)
+![image](https://github.com/user-attachments/assets/a1a2e071-8024-4af5-9987-dc19bab79b40)
 
 
 ---
 ### 🔐 İletişim Ekranı
 Kullanıcının herhangi bir sıkıntı ya da öneri bir fikileri olduğunda iletişime geçebilecekleri ekran.
 
-![image](https://github.com/user-attachments/assets/1cedac64-28f2-4230-8cee-fcfc2bb9b67b)
+![image](https://github.com/user-attachments/assets/eb0c21f5-8987-4869-92fd-71e9615a5ff7)
 
 
 ---
@@ -118,14 +118,17 @@ Kullanıcının herhangi bir sıkıntı ya da öneri bir fikileri olduğunda ile
 ### 🖼️ Görsel Detay ve Yorum Yapma
 Kullanıcının görsellere yorum yapabildiği ve analiz sonuçlarını görebildiği ekran.
 
-![Yorum Ekleme](![image](https://github.com/user-attachments/assets/0dded22e-d3e6-487f-b5e7-6be2f98681ae))
+![image](https://github.com/user-attachments/assets/9d77b344-e887-4d24-9702-968183436cca)
+
 
 ---
 
 ### ⚠️ Spam Uyarısı
 Spam içerik algılandığında sistemin verdiği uyarı.
 
-![image](https://github.com/user-attachments/assets/9e502367-9bf8-4389-a85b-2d568c61b8fd)
+![image](https://github.com/user-attachments/assets/f5e2bfda-c707-47b1-a467-0e69d6967ffa)
+![image](https://github.com/user-attachments/assets/a1e574a7-d489-48db-9a22-40f1ce556628)
+
 
 
 ---
