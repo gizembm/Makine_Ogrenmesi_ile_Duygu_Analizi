@@ -81,7 +81,7 @@ Veritabanı aşağıdaki ana tabloları içerir:
 ### 🏠 Ana Sayfa
 Kullanıcının sisteme giriş yapmadan önce karşılaştığı sayfa.
 
-![image](https://github.com/user-attachments/assets/d86d4f01-90da-4aa0-9155-1f3cf90621da)
+![image](https://github.com/user-attachments/assets/d0bc519d-9acc-4fa4-bc4e-516522da9d51)
 
 
 ---
