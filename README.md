@@ -76,9 +76,57 @@ Veritabanı aşağıdaki ana tabloları içerir:
 - Hilal Şarkışla
 - Elif Sude Ünal
 
-## 📜 Lisans
+## 📷 Ekran Görüntüleri
 
-Bu proje akademik bir çalışmadır. Ticari amaçlarla kullanılması durumunda lütfen geliştiricilere ulaşınız.
+### 🏠 Ana Sayfa
+Kullanıcının sisteme giriş yapmadan önce karşılaştığı sayfa.
+
+![image](https://github.com/user-attachments/assets/d86d4f01-90da-4aa0-9155-1f3cf90621da)
+
+
+---
+### 🔐 Ben Kimim Ekranı
+Resimleri çeken kişi hakkında kısa bir bilgi.
+
+![image](https://github.com/user-attachments/assets/0f00e50d-a1c8-4b6e-ad66-19b3241101bf)
+
+
+---
+
+### 🔐 Giriş Yap Ekranı
+Kullanıcının e-posta ve şifre bilgileriyle giriş yaptığı ekran.
+
+![image](https://github.com/user-attachments/assets/026d036b-76be-425f-9567-a7abd14ccee7)
+
+
+---
+### 🔐 Kayıt Ol Ekranı
+Kullanıcının e-posta ve şifre bilgileriyle Kayıt olduğu ekran.
+
+![image](https://github.com/user-attachments/assets/0aa565a0-6b5b-48f9-bd17-fa1d49f7aff8)
+
+
+---
+### 🔐 İletişim Ekranı
+Kullanıcının herhangi bir sıkıntı ya da öneri bir fikileri olduğunda iletişime geçebilecekleri ekran.
+
+![image](https://github.com/user-attachments/assets/1cedac64-28f2-4230-8cee-fcfc2bb9b67b)
+
+
+---
+
+### 🖼️ Görsel Detay ve Yorum Yapma
+Kullanıcının görsellere yorum yapabildiği ve analiz sonuçlarını görebildiği ekran.
+
+![Yorum Ekleme](![image](https://github.com/user-attachments/assets/0dded22e-d3e6-487f-b5e7-6be2f98681ae))
+
+---
+
+### ⚠️ Spam Uyarısı
+Spam içerik algılandığında sistemin verdiği uyarı.
+
+![image](https://github.com/user-attachments/assets/9e502367-9bf8-4389-a85b-2d568c61b8fd)
+
 
 ---
 
