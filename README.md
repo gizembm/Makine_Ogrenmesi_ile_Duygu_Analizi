@@ -60,15 +60,16 @@ Veritabanı aşağıdaki ana tabloları içerir:
 - `karisik_yorum_veriseti.xlsx`: Olumlu, Olumsuz, Tarafsız, Spam olarak etiketlenmiş Türkçe yorumlardan oluşur.
 - Kaynak: [IMDB Turkish Dataset](https://github.com/fatihilhan/IMDB-Turkish-Dataset), [Sentiment140](https://github.com/kazanova/sentiment140)
 
+## 👨‍💻 Katılımcılar
+
+- Dilara Öztürk
+- Yasemin Kılıç
+- Gizem Efe
+- Hilal Şarkışla
+- Elif Sude Ünal
+
+
 ## 📷 Uygulama Görselleri
-
-- Ana Sayfa
-- Kayıt / Giriş Ekranı
-- Görsel Detay ve Yorum Ekleme
-- Duygu Analizi Sonuçları
-- Spam Yorum Uyarı Sistemi
-
-## 📷 Ekran Görüntüleri
 
 ### 🏠 Ana Sayfa
 Kullanıcının sisteme giriş yapmadan önce karşılaştığı sayfa.
@@ -124,13 +125,7 @@ Spam içerik algılandığında sistemin verdiği uyarı.
 
 
 
-## 👨‍💻 Katılımcılar
 
-- Dilara Öztürk
-- Yasemin Kılıç
-- Gizem Efe
-- Hilal Şarkışla
-- Elif Sude Ünal
 
 
 ---
