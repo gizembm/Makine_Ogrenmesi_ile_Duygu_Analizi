@@ -1,0 +1,39 @@
+﻿@model yazilimMuhProje.Models.Entities.Kullanicilar
+
+@{
+    ViewBag.Title = "Şifremi Unuttum";
+}
+
+<h2>Şifremi Unuttum</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.Mesaj))
+{
+    <div class="alert alert-success">@ViewBag.Mesaj</div>
+}
+
+<!-- Sadece genel hata mesajlarını göstermek için false parametresi ekleniyor -->
+@Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+@using (Html.BeginForm("SifremiUnuttum", "Kullanici", FormMethod.Post))
+{
+    <div class="form-group">
+        <label for="Eposta">E-posta Adresiniz:</label>
+        <input type="email" name="Eposta" class="form-control" required />
+        @*@Html.ValidationMessage("Eposta", "", new { @class = "text-danger" })*@
+    </div>
+
+    <div class="form-group">
+        <label for="YeniSifre">Yeni Şifre (8 Haneli):</label>
+        <input type="password" name="YeniSifre" class="form-control" required />
+        @*@Html.ValidationMessage("YeniSifre", "", new { @class = "text-danger" })*@ <!-- Şifre hatası sadece burada görünür -->
+    </div>
+
+    <div class="form-group">
+        <label for="SifreOnay">Yeni Şifre (Tekrar):</label>
+        <input type="password" name="SifreOnay" class="form-control" required />
+        @*@Html.ValidationMessage("SifreOnay", "", new { @class = "text-danger" })*@  <!-- Genel hata yerine burada gösterilir -->
+    </div>
+    <br />
+
+    <button type="submit" class="btn btn-primary">Şifremi Güncelle</button>
+}

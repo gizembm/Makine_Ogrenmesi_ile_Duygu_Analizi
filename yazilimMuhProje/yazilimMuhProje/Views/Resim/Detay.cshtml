@@ -1,0 +1,268 @@
+﻿@model yazilimMuhProje.Models.ViewModels.ResimDetayViewModel
+
+<div class="image-detail-container">
+    <!-- Resim Başlığı ve Yıldız Puanı -->
+    <div class="image-header">
+        <h2 class="image-title">@Model.Resim.Baslik</h2>
+        <div class="rating">
+            @{
+                int toplamYorum = Model.Yorumlar.Count;
+                double toplamPuan = Model.Yorumlar.Sum(y =>
+                    y.YorumAnaliz.Any() ?
+                        (y.YorumAnaliz.FirstOrDefault().DuyguDurumu == "Olumlu" ? 5 :
+                         y.YorumAnaliz.FirstOrDefault().DuyguDurumu == "Tarafsız" ? 3 :
+                         1) // Olumsuz ise 1 puan
+                        : 0
+                );
+                double puan = toplamYorum > 0 ? (toplamPuan / toplamYorum) : 0;
+                int tamYildiz = (int)puan;
+                double kalanPuan = puan - tamYildiz;
+
+            }
+
+            @for (int i = 0; i < 5; i++)
+            {
+                if (i < tamYildiz)
+                {
+                    <span class="star filled-star">&#9733;</span>
+                }
+                else if (i == tamYildiz && kalanPuan >= 0.75)
+                {
+                    <span class="star three-quarter-star">&#9733;</span>
+                }
+                else if (i == tamYildiz && kalanPuan >= 0.50)
+                {
+                    <span class="star half-star">&#9733;</span>
+                }
+                else if (i == tamYildiz && kalanPuan >= 0.25)
+                {
+                    <span class="star quarter-star">&#9733;</span>
+                }
+                else
+                {
+                    <span class="star empty-star">&#9733;</span>
+                }
+            }
+        </div>
+    </div>
+
+    <!-- Resim -->
+    <img src="@Model.Resim.ResimYolu" alt="@Model.Resim.Baslik" class="image-preview" />
+
+    <!-- Spam Uyarı Mesajı -->
+    @if (TempData["HataMesaji"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["HataMesaji"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    <h3 class="comments-title">Yorumlar</h3>
+    @foreach (var yorum in Model.Yorumlar)
+    {
+        var analiz = yorum.YorumAnaliz.FirstOrDefault();
+        var duygu = analiz != null ? analiz.DuyguDurumu : "Analiz Edilmedi";
+        string renk = duygu == "Olumlu" ? "green" : (duygu == "Olumsuz" ? "red" : (duygu == "Tarafsız" ? "goldenrod" : "gray"));
+
+        // Emoji belirleme
+        string emoji = duygu == "Olumlu" ? "❤️" : (duygu == "Olumsuz" ? "😢" : (duygu == "Tarafsız" ? "🤔" : "⚪"));
+
+        if (duygu != "Spam")
+        {
+            <div class="comment">
+                <div class="comment-content">
+                    <b>@(yorum.Kullanicilar != null ? yorum.Kullanicilar.KullaniciAdi : "Anonim")</b> -
+                    <span class="comment-date">@(yorum.OlusturmaTarihi?.ToString("dd MMM yyyy HH:mm"))</span>
+                    <br />
+                    @yorum.YorumMetni
+                </div>
+                <span class="comment-analysis" style="color: @renk;">@emoji (@duygu)</span>
+            </div>
+        }
+    }
+
+
+    <!-- Yorum Yapma Formu -->
+    <h4 class="comment-form-title">Yorum Yap</h4>
+    @using (Html.BeginForm("YorumEkle", "Resim", FormMethod.Post))
+    {
+        <div class="form-group">
+            @Html.Hidden("ResimId", Model.Resim.ResimId)
+            <textarea name="yorumMetni" class="form-control" rows="4" placeholder="Yorumunuzu buraya yazın..." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Yorum Gönder</button>
+        </div>
+    }
+</div>
+
+
+<style>
+        .image-detail-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .image-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .star {
+            font-size: 24px;
+            color: gray;
+            display: inline-block;
+        }
+
+        .filled-star {
+            color: gold;
+        }
+
+        .half-star {
+            position: relative;
+            display: inline-block;
+            color: gray;
+        }
+
+            .half-star::after {
+                content: "★";
+                position: absolute;
+                left: 0;
+                width: 50%;
+                overflow: hidden;
+                color: gold; /* Yıldızın dolan kısmı altın rengi olacak */
+            }
+
+        .three-quarter-star {
+            position: relative;
+            display: inline-block;
+            color: gray;
+        }
+
+            .three-quarter-star::after {
+                content: "★";
+                position: absolute;
+                left: 0;
+                width: 75%;
+                overflow: hidden;
+                color: gold; /* Yıldızın dolan kısmı altın rengi olacak */
+            }
+
+        .quarter-star {
+            position: relative;
+            display: inline-block;
+            color: gray;
+        }
+
+            .quarter-star::after {
+                content: "★";
+                position: absolute;
+                left: 0;
+                width: 25%;
+                overflow: hidden;
+                color: gold; /* Yıldızın dolan kısmı altın rengi olacak */
+            }
+
+        .empty-star {
+            color: gray;
+        }
+
+
+        .image-preview {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .comments-title {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .comment {
+            display: flex;
+            justify-content: space-between; /* İçeriği sola ve sağa yayar */
+            align-items: center; /* Dikey hizalamayı yapar */
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-content {
+            flex: 1; /* Yorum metni alanı genişler */
+        }
+
+        .comment-analysis {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-left: 10px;
+            white-space: nowrap; /* Yorumun satır atlamasını önler */
+        }
+
+        .comment-form-title {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .btn-primary {
+            background-color: #8395a7;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .btn-primary:hover {
+                background-color: #2980b9;
+            }
+
+        .alert {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .comment-date {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-left: 10px;
+            font-style: italic;
+        }
+    </style>
+
+
+
+

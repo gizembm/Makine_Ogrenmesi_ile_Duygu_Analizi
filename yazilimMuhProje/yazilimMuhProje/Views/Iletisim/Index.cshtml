@@ -1,0 +1,96 @@
+﻿@model yazilimMuhProje.Models.Entities.Iletisim
+
+@{
+    ViewBag.Title = "İletişim";
+}
+
+<div class="contact-container">
+    <h2 class="contact-title">Bana Ulaşın</h2>
+
+    @if (ViewBag.Mesaj != null)
+    {
+        <div class="alert alert-success">@ViewBag.Mesaj</div>
+    }
+
+    @using (Html.BeginForm())
+    {
+        <div class="form-group">
+            <label class="control-label">Mail Adresi</label>
+            @*@Html.LabelFor(model => model.Eposta, htmlAttributes: new { @class = "control-label" })*@
+            @Html.TextBoxFor(model => model.Eposta, new { @class = "form-control", placeholder = "E-posta adresinizi girin", type = "email", required = "required" })
+            @Html.ValidationMessageFor(model => model.Eposta, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Ad Soyad</label>
+            @*@Html.LabelFor(model => model.AdSoyad, htmlAttributes: new { @class = "control-label" })*@
+            @Html.TextBoxFor(model => model.AdSoyad, new { @class = "form-control", placeholder = "Adınızı ve Soyadınızı girin", required = "required" })
+            @Html.ValidationMessageFor(model => model.AdSoyad, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Konu, htmlAttributes: new { @class = "control-label" })
+            @Html.TextBoxFor(model => model.Konu, new { @class = "form-control", placeholder = "Mesaj konusunu girin", required = "required" })
+            @Html.ValidationMessageFor(model => model.Konu, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Mesaj, htmlAttributes: new { @class = "control-label" })
+            @Html.TextAreaFor(model => model.Mesaj, new { @class = "form-control", rows = 5, placeholder = "Mesajınızı yazın...", required = "required" })
+            @Html.ValidationMessageFor(model => model.Mesaj, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Mesaj Gönder</button>
+        </div>
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    }
+</div>
+
+
+<style>
+    /* İletişim Sayfası Stil */
+    .contact-container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .contact-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .btn-primary {
+        background-color: #8395a7;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+</style>
