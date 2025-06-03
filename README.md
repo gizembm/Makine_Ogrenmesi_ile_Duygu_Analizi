@@ -126,7 +126,8 @@ Kullanıcının görsellere yorum yapabildiği ve analiz sonuçlarını görebil
 ### ⚠️ Spam Uyarısı
 Spam içerik algılandığında sistemin verdiği uyarı.
 
-![image](https://github.com/user-attachments/assets/f5e2bfda-c707-47b1-a467-0e69d6967ffa)
+![image](https://github.com/user-attachments/assets/5acca463-61a4-4ed2-9c17-6eaf66a2e821)
+
 ![image](https://github.com/user-attachments/assets/a1e574a7-d489-48db-9a22-40f1ce556628)
 
 
