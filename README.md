@@ -71,57 +71,69 @@ Veritabanı aşağıdaki ana tabloları içerir:
 
 ## 📷 Uygulama Görselleri
 
-### 🏠 Ana Sayfa
+### 🏠 Ana Sayfa  
 Kullanıcının sisteme giriş yapmadan önce karşılaştığı sayfa.
 
-![image](https://github.com/user-attachments/assets/d0bc519d-9acc-4fa4-bc4e-516522da9d51)
-
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/d0bc519d-9acc-4fa4-bc4e-516522da9d51" width="800"/>
+</p>
 
 ---
-### 🔐 Ben Kimim Ekranı
+
+### 🧑‍💼 Ben Kimim Ekranı  
 Resimleri çeken kişi hakkında kısa bir bilgi.
 
-![image](https://github.com/user-attachments/assets/843f3ee0-256e-4b37-aaeb-097d13ac213c)
-
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/843f3ee0-256e-4b37-aaeb-097d13ac213c" width="800"/>
+</p>
 
 ---
 
-### 🔐 Giriş Yap Ekranı
+### 🔐 Giriş Yap Ekranı  
 Kullanıcının e-posta ve şifre bilgileriyle giriş yaptığı ekran.
 
-![image](https://github.com/user-attachments/assets/566e90b5-b126-470b-bebe-15227150f9f0)
-
-
----
-### 🔐 Kayıt Ol Ekranı
-Kullanıcının e-posta ve şifre bilgileriyle Kayıt olduğu ekran.
-
-![image](https://github.com/user-attachments/assets/a1a2e071-8024-4af5-9987-dc19bab79b40)
-
-
----
-### 🔐 İletişim Ekranı
-Kullanıcının herhangi bir sıkıntı ya da öneri bir fikileri olduğunda iletişime geçebilecekleri ekran.
-
-![image](https://github.com/user-attachments/assets/eb0c21f5-8987-4869-92fd-71e9615a5ff7)
-
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/566e90b5-b126-470b-bebe-15227150f9f0" width="800"/>
+</p>
 
 ---
 
-### 🖼️ Görsel Detay ve Yorum Yapma
+### 📝 Kayıt Ol Ekranı  
+Kullanıcının e-posta ve şifre bilgileriyle kayıt olduğu ekran.
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/a1a2e071-8024-4af5-9987-dc19bab79b40" width="800"/>
+</p>
+
+---
+
+### 📬 İletişim Ekranı  
+Kullanıcının herhangi bir sıkıntı ya da öneri fikri olduğunda iletişime geçebileceği ekran.
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/eb0c21f5-8987-4869-92fd-71e9615a5ff7" width="800"/>
+</p>
+
+---
+
+### 🖼️ Görsel Detay ve Yorum Yapma  
 Kullanıcının görsellere yorum yapabildiği ve analiz sonuçlarını görebildiği ekran.
 
-![image](https://github.com/user-attachments/assets/9d77b344-e887-4d24-9702-968183436cca)
-
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/9d77b344-e887-4d24-9702-968183436cca" width="800"/>
+</p>
 
 ---
 
-### ⚠️ Spam Uyarısı
+### ⚠️ Spam Uyarısı  
 Spam içerik algılandığında sistemin verdiği uyarı.
 
-![image](https://github.com/user-attachments/assets/6d532e0f-41e5-41ab-9db1-402c3280cb46)
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/6d532e0f-41e5-41ab-9db1-402c3280cb46" width="800"/>
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/a1e574a7-d489-48db-9a22-40f1ce556628" width="800"/>
+</p>
 
-![image](https://github.com/user-attachments/assets/a1e574a7-d489-48db-9a22-40f1ce556628)
 
 
 
